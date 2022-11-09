@@ -1,12 +1,12 @@
 function createGame(icon, hour, icon2){
  return `
   <li>
- <img src="/assets/icon=${icon}.svg" alt="bandeira ${icon}"/>
+ <a href="https://www.google.com/search?q=seleção+${icon2}"><img src="/assets/icon=${icon2}.svg" alt="bandeira da ${icon2}"/></a>
           <strong>${hour}</strong>
-<img src="/assets/icon=${icon2}.svg" alt="bandeira da ${icon2}"/>
+ <a href="https://www.google.com/search?q=seleção+${icon}"><img src="/assets/icon=${icon}.svg" alt="bandeira ${icon}"/></a>
    </li>
  ` 
-}
+}g
 let delay = -0.3;
 function createCard(date, day, games) {
   delay = delay + 0.4;
