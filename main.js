@@ -2,7 +2,7 @@ function createGame(icon, hour, icon2){
  return `
   <li>
 <a href="https://www.google.com/search?q=seleção+${icon}">
-<img src="/assets/icon=${icon}.svg" alt="bandeira ${icon}"/>
+<img src="/assets/${icon}.JPG" alt="bandeira ${icon}"/>
 </a>
         <strong>${hour}</strong>
 <a href="https://www.google.com/search?q=seleção+${icon2}">
