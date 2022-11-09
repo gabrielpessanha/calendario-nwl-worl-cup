@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+/*
+Como tirar os Potinhos das listas 
+*/
+
+:root{
+  --card-title-border-color: #047C3F;
+  --card-color-primary-h2: #f7dd43;
+  --color-bg-primary: #1A1F1B;
+ }
+
+body{
+  background-color: #121214;
+  background-image: url(./assets/bg-teste.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  margin-bottom: 63px;
+  text-align: center;
+}
+
+#cards{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card{
+  padding: 32px 23px;
+  text-align: center;
+  background-color: var(--color-bg-primary); /**fundo cartão**/
+
+  border-bottom: 2px solid var(--card-title-border-color);  /**borda cartão**/
+  border-radius: 6px;
+
+  /**parte de animações abaixo**/
+  opacity: 0;
+  animation: appear 2.3s forwards;
+  }
+
+.card h2{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 16px;
+    border: 1px solid var(--card-title-border-color);
+    border-radius: 6px;
+  
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 53px;
+  color: var(--card-color-primary-h2); /**Cor data do cartão**/
+}
+
+.card h2 span{
+  color: #E1E1E6;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+#app{
+    width: fit-content;
+  margin:  auto;
+  padding-top: 52px;
+}
+
+.card ul{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 270px;
+}
+.card ul li,
+a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.card ul li + li {
+  padding-top: 24px ;
+  border-top: 1px solid #323238;
+  }
+
+
+
+.card ul li strong{
+     font-weight: 900;
+    font-size: 36px;
+    line-height: 125%;
+    color: #E1E1E6;
+}
+
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+ transform: scale(1.1);
+}
+
+.card h2,
+.card ul li strong,
+.card ul li img{
+transition: transform .3s;
+}
+
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 700px) {
+#cards {
+  max-width: 670px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+}
+
