@@ -31,7 +31,7 @@ createCard('20/11', 'domingo',
 
 createCard('21/11', 'segunda',
   createGame('england', '10:00', 'iran')+
-  createGame('senegal', '13:00', 'Netherlands'))+
+  createGame('senegal', '13:00', 'netherlands'))+
 
 createCard('22/11', 'terça',
   createGame('argentina', '07:00', 'saudi arabia')+
@@ -39,8 +39,9 @@ createCard('22/11', 'terça',
 
 createCard('23/11', 'quarta',
   createGame('germany', '10:00', 'japan')+
-  createGame('spain','13:00','costa Rica')+
+  createGame('spain','13:00','costa rica')+
   createGame('belgium', '16:00', 'canada'))+
+  
 
 createCard('24/11', 'quinta',
   createGame('uruguay', '10:00', 'south korea')+
