@@ -6,7 +6,7 @@ function createGame(icon, hour, icon2){
 </a>
         <strong>${hour}</strong>
 <a href="https://www.google.com/search?q=seleção+${icon2}">
-<img src="./assets/icon=${icon2}.svg" alt="bandeira ${icon2}"/>
+<img src="./assets/${icon2}.svg" alt="bandeira ${icon2}"/>
 </a>
    </li>
  ` 
@@ -27,33 +27,33 @@ return`
 
 document.querySelector("#cards").innerHTML = 
 createCard('20/11', 'domingo',
-  createGame('Qatar', '13:00', 'Ecuador'))+
+  createGame('qatar', '13:00', 'ecuador'))+
 
 createCard('21/11', 'segunda',
-  createGame('England', '10:00', 'iran')+
-  createGame('Senegal', '13:00', 'Netherlands'))+
+  createGame('england', '10:00', 'iran')+
+  createGame('senegal', '13:00', 'Netherlands'))+
 
 createCard('22/11', 'terça',
-  createGame('Argentina', '07:00', 'saudi arabia')+
-  createGame('France', '16:00', 'Australia'))+
+  createGame('argentina', '07:00', 'saudi arabia')+
+  createGame('france', '16:00', 'australia'))+
 
 createCard('23/11', 'quarta',
-  createGame('Germany', '10:00', 'Japan')+
-  createGame('Spain','13:00','Costa Rica')+
-  createGame('Belgium', '16:00', 'Canada'))+
+  createGame('germany', '10:00', 'japan')+
+  createGame('spain','13:00','costa Rica')+
+  createGame('belgium', '16:00', 'canada'))+
 
 createCard('24/11', 'quinta',
-  createGame('Uruguay', '10:00', 'South korea')+
-  createGame('Portugal', '13:00', 'Ghana')+
-  createGame('Brazil', '16:00', 'Serbia'))+
+  createGame('uruguay', '10:00', 'south korea')+
+  createGame('portugal', '13:00', 'ghana')+
+  createGame('brazil', '16:00', 'serbia'))+
   
 createCard('27/11', 'domingo',  
-  createGame('Belgium', '10:00', 'Morocco')+
-  createGame('Spain', '16:00', 'Germany'))+
+  createGame('belgium', '10:00', 'morocco')+
+  createGame('spain', '16:00', 'germany'))+
 
 createCard('28/11', 'segunda',
-  createGame('Brazil', '13:00', 'Switzerland')+ 
-  createGame('Portugal','16:00','Uruguay'))+
+  createGame('brazil', '13:00', 'switzerland')+ 
+  createGame('portugal','16:00','uruguay'))+
   
 createCard('02/12', 'sexta',
-  createGame('Cameroon', '16:00', 'Brazil'))
+  createGame('cameroon', '16:00', 'brazil'))
