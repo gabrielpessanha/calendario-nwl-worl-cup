@@ -99,4 +99,4 @@ createCard('02/12', 'sexta',
   createGame('south korea', '12:00', 'portugal')+
   createGame('ghana', '12:00', 'uruguay')+
   createGame('serbia', '16:00', 'switzerland')+ 
-  createGame('cameroon','16:00','Brazil'))
+  createGame('cameroon','16:00','brazil'))
